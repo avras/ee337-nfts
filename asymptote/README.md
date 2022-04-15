@@ -1,0 +1,1 @@
+The `generate.asy` file in this directory is an [Asymptote](https://asymptote.sourceforge.io/) program that will generate 40 PNG files for the EE337 NFTs. To generate the images, run `asy generate.asy`.
