@@ -1,4 +1,4 @@
-# EE337 IIT Bombay Instructor NFTs
+# EE337 Microprocessor Lab Instructor NFTs
 
 This repository is a fork of the [Eth2 Book Contributor NFT repository (eth2-book-nfts)](https://github.com/smartcontracts/eth2-book-nfts). The latter was created to recognize contributors to [a book on ETH2](https://github.com/smartcontracts/eth2-book).
 
