@@ -5,11 +5,11 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/interfaces/IERC20.sol";
 
-contract ETH2NFT is ERC721Enumerable, Ownable {
+contract EE337NFT is ERC721Enumerable, Ownable {
     using Strings for uint256;
     string public baseURI;
 
-    constructor() ERC721("Eth2 Book Contributor NFTs", "ETH2NFT") {}
+    constructor() ERC721("EE337 IITB Instructor NFTs", "EE337NFT") {}
 
     function tokenURI(
         uint256 _tokenId
@@ -49,7 +49,7 @@ contract ETH2NFT is ERC721Enumerable, Ownable {
     {
         require(
             tokenId == totalSupply(),
-            "ETH2NFT: minting wrong token id"
+            "EE337NFT: minting wrong token id"
         );
 
         _mint(to, tokenId);
@@ -61,7 +61,7 @@ contract ETH2NFT is ERC721Enumerable, Ownable {
     {
         (bool sent,) = msg.sender.call{value: address(this).balance}("");
         if (!sent) {
-            revert("ETH2NFT: eth send failed");
+            revert("EE337NFT: eth send failed");
         }
     }
 
@@ -73,7 +73,7 @@ contract ETH2NFT is ERC721Enumerable, Ownable {
     {
         bool sent = _token.transfer(msg.sender, _token.balanceOf(address(this)));
         if (!sent) {
-            revert("ETH2NFT: token send failed");
+            revert("EE337NFT: token send failed");
         }
     }
 

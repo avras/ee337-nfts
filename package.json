@@ -1,7 +1,7 @@
 {
-  "name": "eth2nft",
+  "name": "ee337nft",
   "version": "1.0.0",
-  "description": "Eth2 Book Contributor NFTs",
+  "description": "EE337 IITB Instructor NFTs",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -20,5 +20,8 @@
     "hardhat": "^2.9.0",
     "hardhat-deploy": "^0.10.5",
     "yesno": "^0.3.1"
+  },
+  "dependencies": {
+    "yarn": "^1.22.18"
   }
 }
